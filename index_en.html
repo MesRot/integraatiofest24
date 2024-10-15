@@ -24,35 +24,24 @@
 		elmnt.classList.toggle('open_window');
 		elmnt.style.zIndex=curZ+1;
 		elmnt.scrollIntoView()		
-	}
-	function spawnBus(el, event){	
-		let bus = document.createElement('img');
-		let speed = 3+Math.random()*3;
-		bus.src="images/bus.png";
-		bus.classList.add("moving-image");
-		bus.style.top = (Math.random()*document.body.scrollHeight)+"px";
-		bus.style.animation = "move-left-right "+speed+"s linear 0s infinite normal forwards running" 
-		
-		document.body.appendChild(bus);
-	}
-	</script>
+	}</script>
 </head>
-<body style="overflow-x:hidden;">
-	<div class="header-row" >	
+<body>
+	<div class="header-row" >
 		<p>Integraatiofest 2024</p>
 	</div>
 	
-	<!-- Sponssit -->
+		<!-- Sponssit -->
 	<div class="left" id="sponssit" >
 		
 		<div class="shadow" >
 
 			<div class="row first-row" style="z-index:0">
-				<p class="white_text">TURUN FESTIT TARJOAA!</p>
+				<p class="white_text">FEST SPONSORS!&nbsp&nbsp&nbsp&nbsp</p>
 				
 			</div>
 			
-			<div class="row sponssi-columns">		
+			<div class="row sponssi-columns">			
 				<table>
 				<tr><td><img src="images/sponsorit/TEK.png"/></td></tr>
 				<tr><td><img src="images/sponsorit/Somersby.png"/></td></tr>
@@ -64,12 +53,12 @@
     </div>
 	
 	<!-- Sponssit small screen-->
-	<div class="small_sponssi" id="sponssit_all" >
+	<div class="small_sponssi" id="sponssit_small" >
 		
 		<div class="shadow" >
 
 			<div class="row first-row" style="z-index:0">
-				<p class="white_text">TURUN FESTIT TARJOAA!</p>				
+				<p class="white_text">FEST SPONSORS!</p>
 			</div>
 			
 			<div class="row sponssi-columns">
@@ -88,7 +77,7 @@
 					<td><img src="images/sponsorit/loimu.png"/></td>
 				</tr>
 				</table>
-			</div>	
+			</div>			
 			</div>
 		</div>
     </div>
@@ -98,9 +87,9 @@
 		<div class="shadow">
 
 			<div class="row first-row">
-				<p class="white_text">PERJANTAI</p>
+				<p class="white_text">FRIDAY</p>
 				<div class="small_buttons">
-				<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore"
 					onclick="minimizeWindowById('aikataulu_perjantai');">
 					<img src="images/cross.png" alt="Cross" 
@@ -110,34 +99,34 @@
 			
 			<div class="row columns" width="500px">								
 				<div class="row single_column">
-					<img src="images/perjantai_straight.png"/>
+					<img src="images/Fridaykalenteriteksti.png"/>
 					<img src="images/tahdet_glow.png" width="500px" class="imageShadow"/>
 					<table>
 					<tr class="aikatauluTauluEkaRivi">
 						<td class="aikatauluVsolu"> 9.00-10.00</td>
-						<td colspan="2">Konferenssipassien jako <br><i>/ Deltan toimisto, Quantum 1. kerros</i></td>
+						<td colspan="2">Distribution of conference passes <br><i>/ Delta office, Quantum 1. floor</i></td>
 					</tr>
 					<tr class="aikatauluTauluTokaRivi">										
 						<td class="aikatauluVsolu">10.00-14.00</td>
-						<td colspan="2">Luennot <br><i>/ Natura IX</i></td>
+						<td colspan="2">Lectures <br><i>/ Natura IX</i></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">10.00-10.20</td>
-						<td>Aloitusinfo</td>
+						<td>Starting info</td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">10.20-10.45</td>
-						<td>Anton Nykänen: <b>Algorithmiq</b> esittäytyy</td>
+						<td>Anton Nykänen: introducing <b>Algorithmiq</b></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">10.45-11.10</td>
-						<td>Vitaliy Gurov: <b>TEK</b> esittäytyy</td>
+						<td>Vitaliy Gurov: introducing <b>TEK</b></td>
 					</tr>
 					<tr>
-						<td class="aikatauluVsolu" colspan="3"><center><i><u>11.30-12.30 Lounastauko</u></i></center></td>
+						<td class="aikatauluVsolu" colspan="3"><center><i><u>11.30-12.30 LUNCH</u></i></center></td>
 					</tr>
 					<tr>
 						<td></td>
@@ -156,25 +145,25 @@
 					</tr>
 					<tr>
 						<td class="aikatauluVsolu" >14.00-17.00</td>
-						<td colspan="2">Excut</td>
+						<td colspan="2">Excursions</td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">17.00-18.30</td>
-						<td>Majoitus avoinna</td>
+						<td>Accomodations open</td>
 					</tr>
 					<tr>
 						<td class="aikatauluVsolu">19.00-23.00</td>
-						<td colspan="2">Sitsit <br><i>/ T-talo</i></td>
+						<td colspan="2">Sitz party <br><i>/ T-talo</i></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">21.00</td>
-						<td>Majoitus avoinna</td>
+						<td>Accomodations open</td>
 					</tr>
 					<tr>
 						<td class="aikatauluVsolu">23.00-04.00</td>
-						<td colspan="2">Jatkot <br><i>/ Night Club Marilyn</i></td>
+						<td colspan="2">Afterparty <br><i>/ Night Club Marilyn</i></td>
 					</tr>
 					</table>
 					<img src="images/tahdet_glow.png" width="500px" class="imageShadow"/>
@@ -187,9 +176,9 @@
 		<div class="shadow">
 
 			<div class="row first-row">
-				<p class="white_text">LAUANTAI</p>
+				<p class="white_text">SATURDAY</p>
 				<div class="small_buttons">
-					<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore" 
 					onclick="minimizeWindowById('aikataulu_lauantai');">
 					<img src="images/cross.png" alt="Cross" 
@@ -199,26 +188,26 @@
 			
 			<div class="row columns" width="500px">								
 				<div class="row single_column">
-					<img src="images/lauantai_straight.png"/>
+					<img src="images/Saturdaykalenteriteksti.png"/>
 					<img src="images/tahdet_glow.png" width="500px" class="imageShadow"/>
 					<table>
 					<tr class="aikatauluTauluEkaRivi">
 						<td class="aikatauluVsolu"> 9.00-10.00</td>
-						<td colspan="2">Aamupala <br><i>/ Steiner-koulu</i></td>
+						<td colspan="2">Breakfast <br><i>/ Steiner-koulu (lodgings)</i></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">11.00</td>
-						<td><i>Majoitus sulkeutuu</i></td>
+						<td><i>Accomodation closes</i></td>
 					</tr>
 					<tr class="aikatauluTauluTokaRivi">										
 						<td class="aikatauluVsolu">10.15-13.35</td>
-						<td colspan="2">Luennot <br><i>/ Natura IX</i></td>
+						<td colspan="2">Lectures <br><i>/ Natura IX</i></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">10.15-10.35</td>
-						<td>Evert-elokuva</td>
+						<td>Movie: Evert</td>
 					</tr>
 					<tr>
 						<td></td>
@@ -236,7 +225,7 @@
 						<td>Lauri Heinonen: Matti Nykäsen tilastotiede</td>
 					</tr>
 					<tr>
-						<td class="aikatauluVsolu" colspan="3" style="padding: 10px 0px 10px 0px;"><center><i><u>11.45-12.45 Lounastauko</u></i></center></td>
+						<td class="aikatauluVsolu" colspan="3" style="padding: 10px 0px 10px 0px;"><center><i><u>11.45-12.45 LUNCH</u></i></center></td>
 					</tr>
 					<tr>
 						<td></td>
@@ -245,16 +234,16 @@
 					</tr>
 					<tr>
 						<td class="aikatauluVsolu">13.45-14.45</td>
-						<td colspan="2">Haalarimerkkitori ja posterisessio <br></i>/ Natura</i></td>
+						<td colspan="2"> Patchmarket and postersession <br></i>/ Natura</i></td>
 					</tr>
 					<tr>
 						<td class="aikatauluVsolu">14.00-16.00</td>
-						<td colspan="2">SFMO:n syyskokous<br></i>/ Natura IX</i></td>
+						<td colspan="2">SFMO autumn general meeting<br></i>/ Natura IX</i></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu" >14.00-17.00</td>
-						<td><i>Majoitus avoinna</i></td>
+						<td><i>Accomodations open</i></td>
 					</tr>
 					<tr>
 						<td class="aikatauluVsolu">14.15-16.15</td>
@@ -262,12 +251,12 @@
 					</tr>
 					<tr>
 						<td class="aikatauluVsolu">20.00-04.00</td>
-						<td colspan="2">Bileet <br><i>/ Q-talo</i></td>
+						<td colspan="2">Party <br><i>/ Q-talo</i></td>
 					</tr>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">21.00</td>
-						<td><i>Majoitus avoinna</i></td>
+						<td><i>Accomodations open</i></td>
 					</tr>
 					</table>
 					<img src="images/tahdet_glow.png" width="500px" class="imageShadow"/>
@@ -280,9 +269,9 @@
 		<div class="shadow">
 
 			<div class="row first-row">
-				<p class="white_text">SUNNUNTAI</p>
+				<p class="white_text">SUNDAY</p>
 				<div class="small_buttons">
-					<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore"
 					onclick="minimizeWindowById('aikataulu_sunnuntai');">
 					<img src="images/cross.png" alt="Cross" 
@@ -292,17 +281,17 @@
 			
 			<div class="row columns" width="500px">								
 				<div class="row single_column">
-					<img src="images/sunnuntai_straight.png"/>
+					<img src="images/Sundaykalenteriteksti.png"/>
 					<img src="images/tahdet_glow.png" width="500px" class="imageShadow"/>
 					<table>
 					<tr>
 						<td></td>
 						<td class="aikatauluVsolu">12.00</td>
-						<td><i>Majoituksesta poistuminen</i></td>
+						<td><i>Accomodation closes</i></td>
 					</tr>
 					<tr>
 						<td class="aikatauluVsolu">10:00 - 16:00</td>
-						<td colspan="2">Sillis <br> / <i>Q-talo</i></td>
+						<td colspan="2">Herring breakfast <br> / <i>Q-talo</i></td>
 					</tr>
 					</table>
 					<img src="images/tahdet_glow.png" width="500px" class="imageShadow"/>
@@ -315,9 +304,9 @@
 		<div class="shadow">
 		
 			<div class="row first-row">
-				<p class="white_text">FESTIEN AIKATAULUT</p>
+				<p class="white_text">TIMETABLES</p>
 				<div class="small_buttons">
-					<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore"
 					onclick="minimizeWindowById('aikataulu');">
 					<img src="images/cross.png" alt="Cross" 
@@ -329,32 +318,31 @@
 				<div class="row single_column">
 					<div class="row rows">
 						<img id="aikataulu_perjantai_nappi" 
-							src="images/perjantai.png" 
+							src="images/Friday.png" 
 							onclick="clickElement(this, byId('aikataulu_perjantai'))"
 							class="imageShadow"/>
 							
 						<img id="aikataulu_lauantai_nappi" 
-							src="images/lauantai.png" 
+							src="images/Saturday.png" 
 							onclick="clickElement(this, byId('aikataulu_lauantai'))"
 							class="imageShadow"/>
 					</div>
 					<img id="aikataulu_sunnuntai_nappi" 
-						src="images/sunnunta.png"
+						src="images/Sunday.png"
 						onclick="clickElement(this, byId('aikataulu_sunnuntai'))"
 						class="imageShadow"/>
 				</div>
 			</div>
 		</div>
     </div>
-	
 	<!-- Liikenne -->
 	<div class="container scaling-div" id="liikenne" >		
 		<div class="shadow">
 
 			<div class="row first-row">
-				<p class="white_text">JULKINEN LIIKENNE</p>
+				<p class="white_text">PUBLIC TRANSPORTATION</p>
 				<div class="small_buttons">
-					<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore" 
 					onclick="minimizeWindowById('liikenne');">
 					<img src="images/cross.png" alt="Cross" 
@@ -365,28 +353,25 @@
 			<div class="row columns">
 				<div class="column">	
 					<div class="viewport">
-					<img src="images/bus.png" alt="Moving Image" class="moving-image" style="animation-delay:2.5s;left:-100%" onclick="spawnBus(this, event);">
+					<img src="images/bus.png" alt="Moving Image" class="moving-image" style="animation-delay:2.5s;left:-100%">
 					</div>				
 				</div>			
 				<div class="column center-column">
-					<p>Siirtymät tapahtumapaikkojen ja majoituksen välillä eivät ole pitkiä, mutta katso tarvittaessa <a target="_blank" href="https://www.foli.fi/fi">www.foli.fi</a> eli Turun seudun joukkoliikenne palvelee. Föli-sovelluksesta löydät reittioppaat ja voit ostaa lipun, mutta kaikissa Fölin busseissa toimii myös lähimaksu!
-					</p>
+					<p>The distances between event venues and accommodation are not long, but if needed, the Turku region's public transport, <a target="_blank" href="https://www.foli.fi/fi">Foli</a>, will be available. You can find route guides and buy tickets through the Föli app, but all Föli buses also accept contactless payments! </p>
 					
 					<p>
-					<a href="https://www.utu.fi/fi/yliopisto/turun-kampus/pys%C3%A4kointi">Pysäköinti</a> yliopiston pysäköintialueilla on maksullista arkisin 8-16. Muuna aikana parkkialueet ovat vapaasti käytössä lukuun ottamatta henkilökohtaisia pysäköintiluvallisia paikkoja.
+					<a href="https://www.utu.fi/en/university/turku-campus/parking">Parking</a> in university parking areas is chargeable on weekdays 8-16. At other times, the parking areas are freely available, except for spaces reserved for personal parking permits.
 					</p>
 										
 				</div>
 				<div class="column">	
 					<div class="viewport">
-					<img src="images/bus.png" alt="Moving Image" class="moving-image" onclick="spawnBus();">
+					<img src="images/bus.png" alt="Moving Image" class="moving-image">
 					</div>
 				</div>
 			</div>
 		</div>
     </div>
-	
-
 	
 	<!-- Kaupunki -->
 	
@@ -394,16 +379,16 @@
 		<div class="shadow">
 
 			<div class="row first-row">
-				<p class="white_text">EXCUT (TURUSSA)</p>
+				<p class="white_text">EXCURSIONS (IN TURKU)</p>
 				<div class="small_buttons">
-					<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore"
 					onclick="minimizeWindowById('kaupunki');">
 					<img src="images/cross.png" alt="Cross" 
 					onclick="closeWindowById('kaupunki')">
 				</div>
 			</div>
-
+			
 			<div class="row columns">		
 				<div class="column single_column" >
 					<div class="tooltip">
@@ -412,7 +397,7 @@
 						alt="turun linna"
 						class="imageShadow"/>
 						<div class="tooltiptext">
-							<p>Tule kiertämään Turun linnaa! Kierroksella tulevat tutuiksi linnan arki ja juhlat, sodat ja rakkaudet. Kuulet linnan keskiaikaisesta elämästä ja renessanssihovin loistosta. Kierroksella kierretään linnan vanhin osa.
+							<p>During the guided tour of Turku Castle you will hear about everyday life, celebrations, war and love within the Castle walls. You will hear stories about life in the middle ages and the glamour in the renaissance court..The tour will go through the medieval part of the Castle.
 							</p>
 						</div>					
 					</div>
@@ -423,7 +408,7 @@
 						alt="top_analytica" 
 						class="imageShadow"/>
 						<div class="tooltiptext">
-							<p>Top Analytica Oy Ab tarjoaa yrityksille ja tutkimuslaitoksille analyysi- ja tutkimuspalveluja. Laitteemme soveltuvat mm. prosessi-, kemian-, paperi- ja metalliteollisuuden ongelmien selvittämiseen sekä rakennusteollisuuden materiaalien haitta-aineanalyyseihin. 
+							<p>Top Analytica Oy Ab offers analytical and research services to companies and research institutes. Our devices are suitable for example process, chemistry, paper and metal industries, and asbestos analysis of building materials. 
 							</p>
 						</div>					
 					</div>
@@ -433,10 +418,7 @@
 							onclick="clickElement(this, byId('excu_kakola'))"
 							class="imageShadow"/>
 						<div class="tooltiptext">
-							<p>Kakola Brewing Company on vuonna 2018 perustettu naapurustopanimo Kakolanmäellä Turussa. Kakola Brewing Companyn takana on kolme ystävystä, jotka jakavat intohimon tehdä paikallisesta elämästä maukasta.
-							Visionamme on yhdistää olut yksinkertaiseen ja vaivattomaan muotoiluun sekä tuoda olut osaksi paikallista elämää.
-							Laadukkaat raaka-aineet, huumori ja inhimillinen ote ovat arvojemme ytimessä.
-							Oluemme pannaan pienissä erissä, juuri sinua varten.
+							<p>Kakola Brewing Company is a neighborhood brewery founded in 2018 on Kakolanmäki in Turku. Behind Kakola Brewing Company are three friends who feel the local life, who share a passion to make everyday living better. Our Vision is to combine beer with simple and effortless design and to bring beer into local life. High-quality ingredients, humor and a human touch are at the core of our values. Our beer is brewed in small batches, just for you.
 							</p>
 						</div>					
 					</div>
@@ -450,9 +432,9 @@
 	<div class="container scaling-div" id="majoitus">		
 		<div class="shadow">
 			<div class="row first-row">
-				<p class="white_text">MAJOITUS</p>
+				<p class="white_text">ACCOMODATION</p>
 				<div class="small_buttons">
-					<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore" 
 					onclick="minimizeWindowById('majoitus');">
 					<img src="images/cross.png" alt="Cross" 
@@ -463,20 +445,19 @@
 			<div class="row columns">	
 				<center>			
 				<div style="max-width:90%">
-					<p>Festien majoitus sijaitsee Turun Steiner-koululla osoitteessa Kaivokatu 12, ja siellä nukutaan tuttuun tapaan lattialla eri tiloissa ainejärjestöittäin. Majoituksesta on matkaa yliopistolle 900 m, T-talolle 1,3 km, Q-talolle 1,7 km ja keskustaan 1,9 km. Majoituksen ja keskustan väliä kulkevat bussit 32, 42, ja 53(A). Bussiaikataulut näkee osoitteesta <a href="https://www.foli.fi/fi">https://www.foli.fi/fi</a> tai Föli-sovelluksesta.</p>
-					<p>Steiner-koulun ovet ovat koko viikonlopun lukossa, ja tästä syystä siellä on erikseen määriteltyinä aikoina kaksi valvojaa, jotka ovat avaamassa ovea, ohjaamassa festiläisiä oikeisiin tiloihin ja vastaamassa majoituspuhelimeen.</p>
+				<p>Accommodation for IntegraatioFest is located at Turun Steiner-koulu(a school), Kaivokatu 12. Sleeping happens on the floor and one needs their own bedding and sleeping pad. People are divided to sleep in different spaces with other people from their own organization.
+				Distance from the lodgings to the University is 900 meters, 1.3 km to T-talo, 1.7 km to Q-talo and 1.9 km to the city centre. Bus lines between the accommodation and city centre are numbers 32, 42, ja 53A. Bus timetables can be found at <a href="https://www.foli.fi/en">https://www.foli.fi/en</a> or in the Föli-app.</p>
+				<p>The doors at the school are locked during the weekend and therefore one can visit the accommodation only at certain predetermined times. During these times there will be two monitors present to open the door, guide people to their sleeping spaces and answer the phone. </p>
+				<p>Monitors are present at the school as follows:<br>
+				Friday at 17:00-18:30 and 21:00-00:00.<br>
+				Saturday at 00:00-10:00, 14:00-17:00 and 21:00-00:00.<br>
+				Sunday at 00:00-11:00 (remember the end of Daylight saving time. Accommodation will close at 11:00 Eastern European Time or at 12:00 Eastern European Summer Time)</p>
+				<p>Transportation for luggage from the University to the accommodation will be organized if one does not wish to visit the accommodation before the start of Friday’s Sitz Party. On Sunday one must leave the lodgings by 12:00.</p>
 
-					<p>Majoitusvalvojat päivystävät Steiner-koululla seuraavasti:<br>
-					Perjantaina klo 17:00-18:30 ja 21:00-00:00.<br>
-					Lauantaina klo 00:00-10:00, 14:00-17:00 ja 21:00-00:00.<br>
-					Sunnuntaina klo 00:00-11:00 (muista kellojen siirto la-su yönä tunnilla taaksepäin, viimeinen päivystysvuoro loppuu klo 11 talviaikaa tai klo 12 kesäaikaa).
-					
-					<p>Jos ennen perjantai-illan sitsejä ei halua tai ehdi käydä majoituksessa, tavaroille järjestetään kuljetus yliopistolta. Sunnuntaina majoituksesta on poistuttava viimeistään klo 12:00.</p>
-
-					<p><i>Alkoholin ja muiden päihteiden käyttäminen ja esillä pitäminen on ehdottomasti kiellettyä koulun tiloissa ja alueella.</i></p>
-
+				<p><i>Consuming alcohol or other substances or having them visible at the school premises is strictly forbidden.</i></p>
+				
 				</div>
-				</center>			
+				</center>
 			</div>
 		</div>
     </div>
@@ -487,9 +468,9 @@
 		<div class="shadow">
 
 			<div class="row first-row">
-				<p class="white_text">YHTEYSTIEDOT</p>
+				<p class="white_text">CONTACTS</p>
 				<div class="small_buttons">
-					<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore" 
 					onclick="minimizeWindowById('yhteys');">
 					<img src="images/cross.png" alt="Cross" 
@@ -497,27 +478,27 @@
 				</div>
 			</div>
 			
-			<div class="row columns">			
-				<center>
-				<div style="max-width:90%; margin:auto;">
-				
-					<p><b>Järjestävä taho:</b> <br/>Turun yliopiston matemaattisten ja fysikaalisten tieteiden opiskelijoiden yhdistys Delta ry<br/>
-					delta@utu.fi<br/>
-					<a href="https://delta.utu.fi/">https://delta.utu.fi/</a><br/>
-					<b>Integraatiofest 2024 -toimikunnan puheenjohtaja:</b> <br/>
-					Sanni Kivistö <br/>
-					sekivi@utu.fi<br/>
-					TG: @sekivisto </p>
+			<div class="row columns">
+				<div class="column">					
+				</div>			
+				<div class="column center-column">
+					<p>Chair of Integraatiofest 2024 committee:<br/>
+						Sanni Kivistö <br/>
+						sekivi@utu.fi<br/>
+						TG: @sekivisto </p>
 
-					<p>Hätänumero: 112<br/>
-					Myrkytystietokeskus: 0800 147111</p> 				
+						<p>Emergency number: 112<br/>
+						Poison information center: 0800 147111</p>
+										
 				</div>
-				</center>					
+				<div class="column">					
+				</div>
 			</div>
 		</div>
     </div>
 	
 	<!-- Video -->
+	
 	<div class="container scaling-div" style="display:none" id="video" style="overflow: hidden;">		
 		<div class="shadow">
 
@@ -528,10 +509,9 @@
 					<img src="images/underscore.png" alt="Underscore" 
 					onclick="minimizeWindowById('video');">
 					<img src="images/cross.png" alt="Cross" 
-					onclick="closeWindowById('video');					
-					setTimeout(()=>{
+					onclick="closeWindowById('video');
 					byId('hypevideo').src = byId('hypevideo').src;
-					byId('video').style.display='none';}, 2000)
+					setTimeout(()=>{byId('video').style.display='none';}, 2000)
 					">
 				</div>
 			</div>
@@ -541,16 +521,15 @@
 			</div>
 		</div>
     </div>
-	
 	<!-- Pää -->
     <div class="container" id="container" style="margin-bottom:100px; z-index:1;">
 		
 		<div class="shadow">
 
 			<div class="row first-row">
-				<p class="white_text">EHDOTTOMASTI YHDET FESTEISTÄ - DEFINITIVT EN AV FESTERNA!</p>
+				<p class="white_text">DEFINITELY ONE OF THE FESTS- DEFINITIVT EN AV FESTERNA!</p>
 				<div class="small_buttons">
-					<a href="./index_en.html"><img src="images/EN.png" alt="Finnish"/></a>
+					<a href="./index.html"><img src="images/FI.png" alt="Finnish"/></a>
 					<img src="images/underscore.png" alt="Underscore"
 					onclick="minimizeWindowById('container');">
 					<img src="images/cross.png" alt="Cross" 
@@ -561,46 +540,46 @@
 			<div class="row columns">
 				<div class="column">
 					<div id="aikataulu_nappi" onclick="clickElement(this, byId('aikataulu'))">
-						<img src="images/calendar.png" alt="Aikataulu">
-						<p>Aikataulu</p>
+						<img src="images/calendar.png" alt="Calendar">
+						<p>Timetables</p>
 					</div>
 					<div id="liikenne_nappi" onclick="clickElement(this, byId('liikenne'))">
-						<img src="images/shield.png" alt="Liikenne">
-						<p>Liikkuminen ja pysäköinti</p>
+						<img src="images/shield.png" alt="Traffic">
+						<p>Public transportation</p>
 					</div>
 				</div>			
 				<div class="column center-column">
 					
 					<div id="kaupunki_nappi" onclick="clickElement(this, byId('kaupunki'))">
 						<img src="images/posankka.png" alt="Posankka">
-						<p>Kaupunki ja excut</p>
-					</div>
+						<p>City and excursions</p>
+					</div>					
 					<div id="video_nappi" onclick="clickElement(this, byId('video'));byId('video').style.display='block';">
 						<img src="images/dance.gif" alt="DELTAAA">
-						<p>HYPEVIDEO</p>
+						<p>HYPE VIDEO</p>
 					</div>
 					
 				</div>
 				<div class="column">
 					<div id="majoitus_nappi" onclick="clickElement(this, byId('majoitus'));">
-						<img src="images/moon.png" alt="Kuu">
-						<p>Majoitusinfo</p>
+						<img src="images/moon.png" alt="Moon">
+						<p>Accomodations</p>
 					</div>
 					<div id="yhteys_nappi" onclick="clickElement(this, byId('yhteys'))">
-						<img src="images/phone.png" alt="Puhelin">
-						<p>Yhteystiedot</p>
+						<img src="images/phone.png" alt="Phone">
+						<p>Contact info</p>
 					</div>
 				</div>
 			</div>
 		</div>
     </div>
-		<!-- Sponssit small screen-->
+		<!-- Sponssit -->
 	<div class="right" id="sponssit_right" >
 		
 		<div class="shadow" >
 
 			<div class="row first-row" style="z-index:0">
-				<p class="white_text">TURUN FESTIT TARJOAA!</p>				
+				<p class="white_text">FEST SPONSORS!</p>				
 			</div>
 			
 			<div class="row sponssi-columns">				
@@ -609,11 +588,10 @@
 				<tr><td><img src="images/sponsorit/If.png"/></td></tr>
 				<tr><td><img src="images/sponsorit/KOFF.png"/></td></tr>
 				<tr><td><img src="images/sponsorit/loimu.png"/></td></tr>
-				</table>
+				</table>			
 			</div>
 		</div>
-    </div>
-	
+    </div>	
 	<script> 
 	var cont = document.getElementsByClassName("container")
 	var title = document.getElementsByClassName("header-row")[0]
@@ -626,7 +604,7 @@
 		cont[i].style.left = (window.innerWidth/2 - 750/2)+"px";		
 	}
 	curZ = cont.length;	
-
+	
 	var napit = [["aikataulu",750],
 	["liikenne",750],
 	["kaupunki",750],
@@ -636,9 +614,8 @@
 	["aikataulu_lauantai",750],
 	["aikataulu_sunnuntai",750]]
 	if (window.screen.availWidth > 768 ) {
-		//napit.forEach(([e,w]) => registerWindowCreator(byId(e+"_nappi"), byId(e), w));
+		napit.forEach(([e,w]) => registerWindowCreator(byId(e+"_nappi"), byId(e), w));
 	}
-	
 	</script>
 </body>
 </html>
